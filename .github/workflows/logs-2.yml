@@ -1,6 +1,6 @@
-name: Generate Lots of Logs 0
+name: Generate Lots of Logs 2
 
-on: [push,workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   generate_logs:
@@ -14,4 +14,4 @@ jobs:
         run: |
           for i in {1..1000}; do
             echo "Log entry $i"
-	 done
+          done
